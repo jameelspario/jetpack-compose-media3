@@ -23,8 +23,8 @@ constructor(@ApplicationContext val context: Context) {
     )
 
     private var selectionClause: String? =
-        "${MediaStore.Audio.AudioColumns.IS_MUSIC} = ? AND ${MediaStore.Audio.Media.MIME_TYPE} NOT IN (?, ?, ?)"
-    private var selectionArg = arrayOf("1", "audio/amr", "audio/3gpp", "audio/aac")
+        "${MediaStore.Audio.AudioColumns.IS_MUSIC} = ? AND ${MediaStore.Audio.Media.MIME_TYPE} NOT IN (?, ?, ?, ?)"
+    private var selectionArg = arrayOf("1", "audio/amr", "audio/3gpp", "audio/aac", "audio/mpeg")
 
     private val sortOrder = "${MediaStore.Audio.AudioColumns.DISPLAY_NAME} ASC"
 
